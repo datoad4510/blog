@@ -22,7 +22,7 @@ $$\text{removeK}(digits[1..n],m)=max_{i \in [1..n]}(digits[i]*10^m +\text{remove
 $$\text{removeK}(digits[i..n],m)=0,\text{ }n-i+1 \lt m \text{ (can't choose m digits, less than m left)}$$
 $$\text{removeK}(digits[i..n],0)=0,\text{ (done with choosing)}$$
 
-We can make a 2D table to cache solutions to the subproblems. The time complexity will be $O(n*k)$, and the space complexity will also be $O(n*k)$.
+We can make a 2D table to cache solutions to the subproblems. The time complexity will be $O(n * k)$, and the space complexity will also be $O(n * k)$.
 
 ### Optimal solution
 

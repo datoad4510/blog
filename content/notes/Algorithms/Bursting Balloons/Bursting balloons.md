@@ -25,14 +25,16 @@ coins =  3*1*5    +   3*5*8   +  1*3*8  + 1*8*1 = 167
 -   `0 <= nums[i] <= 100`
 
 
-### Solution:
+### Brute-force Solution:
 
 Whenever a problem asks us to maximize something, there can be a few cases. One scenario is that the best solution is to just brute-force the problem. Make every possible choice for the first baloon to pop, then the second baloon, etc. and return the maximum of all possibilities. The amount of steps here would be at least $n!$.
 
 Another scenario is that the problem exhibits some kind of greedy structure, wherein making locally optimal choices leads to a globally optimal solution. This is clearly not the case here if we just look at the array [100,1,100] :
-$$(1*100*1)+(1*100*1)+(1*1*1)\lt(100*1*100)+(1*100*100)+(1*100*1)$$
+$$(1 * 100 * 1)+(1 * 100 * 1)+(1 * 1 * 1)\lt(100 * 1 * 100)+(1 * 100 * 100)+(1 * 100 * 1)$$
 
 Sometimes, we can optimize brute-force solutions by caching the solutions to its sub-problems. However, if you try to optimize the solution above, you will see that it's very hard to do so. The subproblems will be subsequences of the original array, because we don't know in what order the baloons will be popped when simulating the process. In fact, we will have to look at every possible ordering! For each subproblem, the value also depends on what previous baloons we popped, because the left and right boundaries will be different. We would need to query subproblem solutions by providing both the subsequences **and** their possible boundaries. We would have to hash the subsequences, which will be a pain. The number of subproblems would be in the order of the number of subsequences of the original array. This is the same as the number of subsets of a set of cardinality n, which is $2^n$. Clearly this solution will be hard to code and slow (but still faster than the brute force approach).
+
+### A shift in perspective
 
 There is a better way to do this. Instead of thinking about the problem moving forward in time, we can think backwards. Let's say $nums[i]$ is the **last** balloon we pop. We know what the left and right boundaries will be when this pop happens, because all the other balloons will be gone, regardless of the order they were popped in! This helps us avoid caching all the possible boundaries and just focus on one. For the whole array, the boundaries will be 1 and 1, because they are out of bounds.
 ![full_arr](notes/Algorithms/Bursting%20Balloons/full_arr.svg)
@@ -72,11 +74,13 @@ To get to the target, we need to know all the values of row 0 and column n-1. Th
 
 At first we start with the red balls (the base cases). We can calculate the green cells straight away. After those, we start calculating the blue cells and etc. until we get to the target. Calculating the value of each cell takes $O(n)$ time, there are $O(n^2)$ number of cells, and so the time complexity of this solution is $O(n^3)$. The space taken up by the matrix will be $O(n^2)$. Coding this solution is trivial.
 
+### Parallel computations
+
 Another thing to think about is how we would make this solution faster by using multithreading. We could calculate the value of each cell on the diagonal at the same time, because all the values on the same diagonal are independent. This would reduce the time complexity of the algorithm to $O(n^2)$.
 
 At first we might think that we can further optimize the solution by only storing one diagonal at a time, and changing up the values of this diagonal so that we can instantly calculate the values of the next one, but there is no obvious way to do this in this problem. I can't prove that we can't do it either, but it seems to me that it should be impossible from an information-theoretic point of view.
 
-Now some further questions:
+### Further practice problems
 
 1.) Print the order in which we popped the balloons to get our optimal solution
 

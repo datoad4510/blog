@@ -10,21 +10,21 @@ A parentheses string is called balanced if it's in the balanced parentheses lang
 
 # Helpful lemmas
 
-Lemma 0: If a string is balanced, then its length is even (and the number of (-s is the same as the number of )-s ).
+**Lemma 0:** If a string is balanced, then its length is even (and the number of (-s is the same as the number of )-s ).
 
-Proof: Strong induction on the length of strings.
+**Proof:** Strong induction on the length of strings. Consequently, the number of parentheses in a balanced string is even.
 
-Lemma 1: Every balanced parentheses string (except for the empty string) contains at least one ().
+**Lemma 1:** Every balanced parentheses string (except for the empty string) contains at least one ().
 
-Proof: Strong induction on the length of strings.
+**Proof:** Strong induction on the length of strings.
 
-Lemma 2: Removing a () from a balanced string leaves the string balanced.
+**Lemma 2:** Removing a () from a balanced string leaves the string balanced.
 
-Proof: Strong induction on the length of strings.
+**Proof:** Strong induction on the length of strings.
 
-Lemma 3 (converse of Lemma 2): If after removing a () from a string, the resulting string was balanced, then the initial string was also balanced.
+**Lemma 3 (converse of Lemma 2):** If after removing a () from a string, the resulting string was balanced, then the initial string was also balanced.
 
-Proof:
+**Proof:**
 
 This is the same as saying that if we insert a () anywhere into a balanced string, the resulting string will also be balanced. Again, this can be done using strong induction on the length of the strings and casework:
 
@@ -52,7 +52,7 @@ If a string is balanced, according to Lemma 0 it has an even number of character
 
 2.) The initial string is unbalanced:
 
-After a few steps, the resulting string must not have a () and be non empty. Otherwise, the initial string would have been balanced by repeated application of Lemma 3, which is a contradiction. Therefore the algorithm returns false, as expected.
+After a few steps, the resulting string must not have a () and be non empty. Otherwise, the initial string would have been balanced by repeated application of Lemma 3 (basically adding back in the removed pairs of parentheses), which is a contradiction. Therefore the algorithm returns false, as expected.
 
 This means that the algorithm is correct. It returns the correct answer in both cases.
 
@@ -64,11 +64,11 @@ We need to optimise this further, because removing substrings from s string is s
 
 Let's keep removing the leftmost () pair. This is fine because it doesn't really matter which () we remove at some point during the algorithm (Lemmas 2 and 3 make no assumption on the position of this pair).
 
-Lemma 4: In a balanced string the leftmost closing bracket must have an opening bracket before it (part of the leftmost pair).
+**Lemma 4:** In a balanced string the leftmost closing bracket must have an opening bracket before it (part of the leftmost pair).
 
-Proof: This is equivalent to saying that the string starts with an opening bracket. Suppose the opposite. If at any point during the algorithm there is a ) at the start of the string, we know that it will never be removed, because a ( will never be magically added in front of it. Hence we already know that the initial string was unbalanced, and our assumption was wrong.
+**Proof:** This is equivalent to saying that a balanced string starts with at least one opening bracket. Suppose the opposite. Let's say some balanced string starts with a closing bracket. Our previous algorithm must result in an empty string when used on the given string. However, if at any point during the algorithm there is a ) at the start of the string, we know that it will never be removed, because a ( will never be magically added in front of it. Hence the algorithm will not return an empty string, this is a contradiction. Our assumption was wrong.
 
-Idea: As a converse of Lemma 4, if the string starts with a closing bracket, then it must be unbalanced.
+**Idea:** As a converse of Lemma 4, if the string starts with a closing bracket, then it must be unbalanced.
 
 Lemma 4 and the idea above must apply to the string during every step of the algorithm (before and after removing the leftmost () pair).
 

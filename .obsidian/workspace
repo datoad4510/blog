@@ -1,0 +1,144 @@
+{
+  "main": {
+    "id": "e5b6f9f8705a6498",
+    "type": "split",
+    "children": [
+      {
+        "id": "f5de670e9ca45142",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "content/notes/Algorithms/Remove K digits/Remove K digits to make the maximum value.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4a7f22b7ce1ff0dd",
+    "type": "split",
+    "children": [
+      {
+        "id": "a0055e82e6aeab88",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04f9420bae9ae642",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "23ee92e631069e9a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "27a310a3e301caad",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5808bcbd8551710f",
+    "type": "split",
+    "children": [
+      {
+        "id": "20b4d19e2be10b2d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6d8944769d7a0ea1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/notes/Algorithms/Remove K digits/Remove K digits to make the maximum value.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c10748df7a69f628",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/notes/Algorithms/Remove K digits/Remove K digits to make the maximum value.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7e309bfdd99f1259",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "072d7f926f8c41c3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/notes/Algorithms/Remove K digits/Remove K digits to make the maximum value.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "04f9420bae9ae642",
+  "lastOpenFiles": [
+    "content/notes/Algorithms/Remove K digits/monostack.png",
+    "content/notes/Algorithms/Remove K digits/Remove K digits to make the maximum value.md",
+    "content/notes/Algorithms/Nth multiple of primes/Nth multiple of primes.md",
+    "content/notes/Algorithms/Next greater permutation/Next greater permutation.md",
+    "content/notes/Algorithms/Bursting Balloons/Bursting balloons.md",
+    "content/notes/Algorithms/Balanced parentheses strings/Check if parentheses are balanced.md",
+    "content/blog-website/notes/Physics/PulleySystem1/Drawing_2022-05-15_20.03.47.excalidraw.png.md",
+    "content/blog-website/notes/Algorithms/Bursting Balloons/full_arr.svg.md",
+    "content/blog-website/Excalidraw/center-of-mass.svg.md",
+    "content/Excalidraw/Drawing 2022-05-15 19.18.00.excalidraw.md"
+  ]
+}
