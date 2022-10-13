@@ -1,4 +1,4 @@
-baseURL = "https://datoad4510.github.io/test-blog/"
+baseURL = "https://datoad4510.github.io/blog/"
 languageCode = "en-us"
 googleAnalytics = "G-XYFD95KB4J"
 relativeURLs = false
