@@ -85,15 +85,15 @@ What we want to see, is how to move from a leaf to the one that is immediately t
 
 Let's do just that. Say we start with the number 1223 and see how our algorithm traverses the decision tree:
 
-![decision-tree](blog-website/notes/Algorithms/Next%20greater%20permutation/decision-tree.svg)
+![decision-tree](notes/Algorithms/Next%20greater%20permutation/decision-tree.svg)
 
 First of all, we notice that we have duplicate leaves. To get rid of them, we remove duplicate subtrees. This is equivalent to skipping subtrees whose roots have sibling nodes with the same value.
 
-![removed-duplicates](blog-website/notes/Algorithms/Next%20greater%20permutation/removed-duplicates.svg)
+![removed-duplicates](notes/Algorithms/Next%20greater%20permutation/removed-duplicates.svg)
 
 Now we just take any leaf, and try moving to the leaft to the right of it.  Say we are moving from 2231 to 2312.
 
-![path1](blog-website/notes/Algorithms/Next%20greater%20permutation/path1.svg)
+![path1](notes/Algorithms/Next%20greater%20permutation/path1.svg)
 
 We can see that we move up until we can move right by one. If the right node is a duplicate of the current one, we need to skip over it. Then, we keep moving left as far as we can go.
 

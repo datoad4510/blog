@@ -1,6 +1,6 @@
 ## When $1 + 1 \neq 2$ (and the mathematics of pulleys)
 
-![initial-problem](blog-website/notes/Physics/PulleySystem1/initial-problem.png)
+![initial-problem](notes/Physics/PulleySystem1/initial-problem.png)
 
 Let's say we have a pulley system as shown in the image. All the ropes involved are massless and inextensible, there is no friction anywhere and the pulley itself has no mass. Blocks (1) and (2) have masses $m_1$ and $m_2$ respectively, where $m_1 < m_2$.
 
@@ -17,7 +17,7 @@ Since $m_1 < m_2$, it is obvious that object (1) will start ascending, and objec
 The fact that the rope is always taut and that it cannot change length gives us a way to make a connection between the vertical accelerations of the two blocks. We will try to solve this problem as formally as possible, making almost no assumptions about any vector directions. This will show that problems like this can be solved algorithmically, with little to no intuitive thinking.
 
 Let's look at the following illustration:
-![moving](blog-website/notes/Physics/PulleySystem1/moving.png)
+![moving](notes/Physics/PulleySystem1/moving.png)
 
 We are looking at the system at time 0 and at time $t \neq 0$ . During this time, the left block moved up, and the right block moved down. Their respective displacement vectors are $\Delta\vec{y}_1(t) = \vec{y}_1(t) - \vec{y}_1(0)$ and $\Delta\vec{y}_2(t) = \vec{y}_2(t) - \vec{y}_2(0)$. Let's call the length of the rope $L$. Let $C$ be the length of the curved rope resting on top of the pulley. This length is constant during the motion (at least until block (1) reaches the bottom of the pulley). $\vec{L}_1(t)$ and $\vec{L}_2(t)$ are the vectors connecting the blocks with the points at which they're hanging from on the pulley.
 
@@ -61,7 +61,7 @@ Note that because $m_1 < m_2$, from the above formulas we get that $a_{1y} \gt 0
 
 To find the force by which the ceiling is acting on the system, we look at the following diagram:
 
-![center-of-mass](blog-website/notes/Physics/PulleySystem1/center-of-mass.svg)
+![center-of-mass](notes/Physics/PulleySystem1/center-of-mass.svg)
 
 We see that the ceiling is acting on the system with the force $\vec{F}=-2\vec{T}=-2|\vec{T}|\hat{j}$. Let's set tight bounds on $|\vec{F}|$ and $a_{cm}$. 
 $$(m_1+m_2)|\vec{g}|-\frac{4m_1m_2}{m_1+m_2}|\vec{g}|=\frac{(m_1-m_2)^2}{m_1+m_2}|\vec{g}|\gt0$$
