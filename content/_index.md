@@ -1,27 +1,15 @@
 ---
-title: 🪴 Quartz 3.
-enableToc: false
+title: Blog
 ---
 
-Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
+##### Notes:
+1. Search using CTRL+K
 
-1. Extremely fast natural-language [[notes/search]]
-2. Customizable and hackable design based on [Hugo](https://gohugo.io/)
-3. Automatically generated backlinks, link previews, and local graph
-4. Built-in [[notes/CJK + Latex Support (测试) | CJK + Latex Support]] and [[notes/callouts | Admonition-style callouts]]
-5. Support for both Markdown Links and Wikilinks
+# Physics
+1. [Weight of pulley system](notes/Physics/PulleySystem1/Weight_of_pulley_system.md)
 
-Check out some of the [amazing gardens that community members](notes/showcase.md) have published with Quartz or read about [why I made Quartz](notes/philosophy.md) to begin with.
-
-## Get Started
-> 📚 Step 1: [Setup your own digital garden using Quartz](notes/setup.md)
-
-Returning user? Figure out how to [[notes/updating|update]] your existing Quartz garden.
-
-If you prefer browsing the contents of this site through a list instead of a graph, you see a list of all [setup-related notes](/tags/setup).
-
-### Troubleshooting
-- 🚧 [Troubleshooting and FAQ](notes/troubleshooting.md)
-- 🐛 [Submit an Issue](https://github.com/jackyzha0/quartz/issues)
-- 👀 [Discord Community](https://discord.gg/cRFFHYye7t)
-
+# Algorithms
+1. [Bursting balloons](notes/Algorithms/Bursting%20Balloons/Bursting%20balloons.md)
+2. [Next greater permutation](notes/Algorithms/Next%20greater%20permutation/Next%20greater%20permutation.md)
+3. [Check if parentheses are balanced](notes/Algorithms/Balanced%20parentheses%20strings/Check%20if%20parentheses%20are%20balanced.md)
+4. [Remove K digits to make the maximum value](notes/Algorithms/Remove%20K%20digits/Remove%20K%20digits%20to%20make%20the%20maximum%20value.md)
