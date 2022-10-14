@@ -12,7 +12,7 @@ First notice that removing k digits is equivalent to leaving n-k digits. So let'
 
 ### Brute force solution
 
-Just look at all (n-k)-length subsequences of $digits$ and return the one that corresponds to the largest number. This will take about $n*C_{n-k}^{n}=n*C_{k}^{n}$ operations. Choose any of the digits as the first digit in the final number and recurse to the right. If there aren't enough digits left, it's an invalid solution.
+Just look at all (n-k)-length subsequences of $digits$ and return the one that corresponds to the largest number. This will take about $n * C_{n-k}^{n}=n*C_{k}^{n}$ operations. Choose any of the digits as the first digit in the final number and recurse to the right. If there aren't enough digits left, it's an invalid solution.
 
 ### Optimizing the brute force solution
 
